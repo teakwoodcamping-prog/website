@@ -1,0 +1,118 @@
+.packages-section {
+  background: #faf7f2;
+  padding: 100px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.packages-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.8rem;
+  color: #4b6043;
+  margin-bottom: 10px;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.package-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  background: #e8f4ec;
+  transition: all 0.4s ease;
+}
+
+.package-img {
+  width: 100%;
+  height: 700px;
+  object-fit: contain;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.package-info {
+  background: #e8f4ec;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+  margin-top: -5px; 
+}
+
+.package-info h2 {
+  font-family: "Inter", sans-serif;
+  color: #4b6043;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.custom-btn {
+  font-family: "Inter", sans-serif;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  background-color: #4b6043;
+  color: #fff;
+  padding: 12px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #7b8d64;
+}
+
+.custom-packages {
+  margin-top: 100px;
+  background: #e8f4ec;
+  padding: 60px 20px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.custom-packages h2 {
+  font-family: "Inter", sans-serif;
+  color: #4b6043;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.custom-packages p {
+  font-family: "Poppins", sans-serif;
+  color: #4b6043;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .package-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .package-img {
+    height: 350px;
+  }
+}

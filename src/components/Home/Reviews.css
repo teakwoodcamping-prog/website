@@ -1,0 +1,133 @@
+.reviews-section {
+  background: #FAF7F2;
+  padding: 80px 120px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  color: #4b6043;
+  margin-bottom: 60px;
+  z-index: 1;
+  position: relative;
+}
+
+.reviews-slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 10px 60px 40px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.reviews-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.review {
+  flex: 0 0 320px;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
+  position: relative;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  opacity: 1;
+}
+
+.review-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.review-rating {
+  color: #f6c800;
+  margin-bottom: 10px;
+}
+
+.reviews-inner {
+  display: flex;
+  gap: 30px;
+  will-change: transform;
+}
+
+.review-name {
+  font-family: 'Poppins', sans-serif;
+  color: #4b6043;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 40px 20px;
+  }
+
+  .reviews-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .reviews-slider {
+    gap: 16px;
+    padding: 10px 20px 30px;
+    justify-content: center;
+  }
+
+  .review {
+    flex: 0 0 auto;
+    width: 220px;
+    aspect-ratio: 1 / 1; 
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .review-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .review-rating {
+    color: #f6c800;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+  }
+
+  .review-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4b6043;
+    margin-top: auto;
+  }
+}
